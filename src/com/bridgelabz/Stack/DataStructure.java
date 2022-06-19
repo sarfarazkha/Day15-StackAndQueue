@@ -9,6 +9,7 @@ public class DataStructure {
         obj1.add(30);
         obj1.add(70);
         obj1.print();
+        obj1.pop();
     }
 }
 

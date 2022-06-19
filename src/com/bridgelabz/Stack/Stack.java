@@ -17,6 +17,17 @@ public class Stack<T> {
         }
 
     }
+    public T pop() {
+        Node<T> popelement = head;
+        T element=popelement.data;
+        Node<T> nextelem=popelement.next;
+        popelement.data=null;
+        popelement.next=null;
+        head=nextelem;
+        return element;
+    }
+
+
 
     public void print() {
         Node<T> temp = head;
@@ -28,4 +39,3 @@ public class Stack<T> {
         }
     }
 }
-
